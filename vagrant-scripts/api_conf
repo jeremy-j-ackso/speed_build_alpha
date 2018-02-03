@@ -1,0 +1,12 @@
+server {
+  listen 80;
+  server_name api.site.com www.api.site.com;
+
+  location / {
+    proxy_pass http://localhost:5984/my_db;
+  }
+  
+  location /_utils {
+    proxy_pass http://localhost:5984/_utils;
+  }
+}
