@@ -11,8 +11,8 @@ curl -sL https://deb.nodesource.com/setup_8.x | bash -
 apt-get install -y couchdb nginx nodejs
 
 # Copy over the nginx configs.
-cp /etc/nginx/nginx.conf /etc/nginx/bak_nginx.conf
-cp /Vagrant/vagrant-scripts/nginx.conf /etc/nginx/nginx.conf
+# cp /etc/nginx/nginx.conf /etc/nginx/bak_nginx.conf
+# cp /Vagrant/vagrant-scripts/nginx.conf /etc/nginx/nginx.conf
 
 # Create my_db if none exists.
 curl -X PUT http://localhost:5984/my_db
